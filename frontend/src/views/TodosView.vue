@@ -468,7 +468,7 @@ onMounted(loadTodos);
         </label>
         <label>
           <span>担当者</span>
-          <input v-model="newAssignee" type="number" placeholder="担当者名" required />
+          <input v-model="newAssignee" type="string" placeholder="担当者名" required />
         </label>
         <div class="form-pair">
           <label>
