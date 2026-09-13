@@ -1,0 +1,23 @@
+{
+  "name": "@taskly/frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev --host 127.0.0.1 --port 5173",
+    "build": "vize check --config ../vize.config.ts --tsconfig tsconfig.app.json src && vp build",
+    "preview": "vp preview",
+    "vize:fmt": "vize fmt --config ../vize.config.ts --check src",
+    "vize:fmt:fix": "vize fmt --config ../vize.config.ts --write src",
+    "vize:lint": "vize lint --config ../vize.config.ts --preset essential --max-warnings 0 src",
+    "vize:check": "vize check --config ../vize.config.ts --tsconfig tsconfig.app.json src"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^1.0.0",
+    "vue": "^3.5.42",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vizejs/vite-plugin": "^0.404.13",
+    "typescript": "^6.0.3"
+  }
+}

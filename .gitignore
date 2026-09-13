@@ -1,0 +1,8 @@
+node_modules
+.vize
+dist
+.DS_Store
+.env
+.env.local
+*.log
+.answers
